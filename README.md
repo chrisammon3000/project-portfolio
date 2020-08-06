@@ -22,6 +22,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -62,7 +64,7 @@ select_keys(nested_dict, keys) # select specific keys
 dict_write(nested_dict, header, path) # output csv file
 ```
 
-### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning)**
+### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning/blob/master/Iris_dataset.ipynb)**
 
 Jupyter notebook that demos EDA, cluster analysis and prediction on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
 
@@ -95,23 +97,14 @@ Contributions to these projects are always welcome. Here are the basic steps:
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
 All of these projects are distributed under the MIT License. See the `LICENSE` file in each repo for more information.
 
-
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
 [stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
