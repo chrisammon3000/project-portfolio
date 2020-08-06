@@ -105,12 +105,11 @@ All of these projects are distributed under the MIT License. See the `LICENSE` f
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[stars-shield]: https://img.shields.io/github/stars/abk7777/poject-portfolio.svg?style=flat-square
+[stars-url]: https://github.com/abk7777/poject-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/abk7777/poject-portfolio.svg?style=flat-square
+[issues-url]: https://github.com/abk7777/poject-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/abk7777/poject-portfolio.svg?style=flat-square
+[license-url]: https://github.com/abk7777/poject-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://linkedin.com/in/gregory-lindsey/
