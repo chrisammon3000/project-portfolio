@@ -39,6 +39,8 @@ Links to Data Science notebooks, Data Engineering pipelines and tools to facilit
 
 Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
 
+![Brazil Fuel Analysis Screenshot](./img/choropleth_mean_fuel_price_state.png)
+
 ### **[csv2ddb](https://github.com/abk7777/csv2ddb)**
 
 Command line tool for easy loading of CSV files directly into AWS DynamoDB. Solves the problem of how to get your csv data into a DynamoDB table. Built on boto3 and click.
