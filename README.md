@@ -39,7 +39,7 @@ Links to Data Science notebooks, Data Engineering pipelines and tools to facilit
 
 Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
 
-### **[csv2ddb]()**
+### **[csv2ddb](https://github.com/abk7777/csv2ddb)**
 
 Command line tool for easy loading of CSV files directly into AWS DynamoDB. Solves the problem of how to get your csv data into a DynamoDB table. Built on boto3 and click.
 
@@ -48,7 +48,7 @@ csv2ddb create --table-name my-cool-table --partition-key userId --partition-key
 csv2ddb load --table-name my-cool-table ./data/profile.csv
 ```
 
-### **[dict-smasher]()**
+### **[dict-smasher](https://github.com/abk7777/dict-smasher)**
 
 Python library using recursive functions to flatten nested dictionaries and lists of dictionaries. A work in progress. Built on Python standard library.
 
@@ -60,18 +60,18 @@ select_keys(nested_dict, keys) # select specific keys
 dict_write(nested_dict, header, path) # output csv file
 ```
 
-### **[iris-machine-learning]()**
+### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning)**
 
 Jupyter notebook that demos EDA, cluster analysis and prediction on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
 
 
-### **[neo4j-titanic]()**
+### **[neo4j-titanic](https://github.com/abk7777/neo4j-titanic)**
 
 Simple Python data pipeline that loads the *RMS Titanic* dataset into a Neo4j Docker instance. Get it up and running using `make graph`. Built using Conda, Python, Shell, Make, Neo4j and Docker.
 
 ![Neo4j Browser](./img/neo4jbrowser.png)
 
-### **[permits-data]()**
+### **[permits-data](https://github.com/abk7777/permits-data)**
 
 Python ETL pipeline to load construction permits data from the Los Angeles Open Data Portal into a PostgreSQL Docker instance. Run `make data` to download data, load it into a Docker PostgreSQL database, transform columns and geocode missing addresses. Includes a basic Object-Relational Mapper (ORM) library for PostgreSQL using psycopg2. Built on Conda, Python, Shell, Make, PostgreSQL, Docker and psycopg2.
 
