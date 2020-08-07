@@ -32,7 +32,7 @@
 <!-- Background -->
 ## Overview
 
-Links to Data Science notebooks, Data Engineering pipelines and tools to facilitate data analysis, built by me. 
+Links to Data Science/Data Engineering projects, notebooks, tools and pipelines built by me. 
 
 <!-- ABOUT THE PROJECTS -->
 ## Projects
