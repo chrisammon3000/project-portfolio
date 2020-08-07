@@ -32,7 +32,14 @@
 <!-- Background -->
 ## Overview
 
-Links to Data Science/Data Engineering projects, notebooks, tools and pipelines built by me. 
+Data Science and Data Engineering projects, tools, notebooks and pipelines built by me:
+* **[bioNX](https://github.com/abk7777/bioNX)**
+* **[dict-smasher](https://github.com/abk7777/dict-smasher)**
+* **[csv2ddb](https://github.com/abk7777/csv2ddb)**
+* **[neo4j-titanic](https://github.com/abk7777/neo4j-titanic)**
+* **[permits-data](https://github.com/abk7777/permits-data)**
+* **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
+* **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning/blob/master/Iris_dataset.ipynb)**
 
 <!-- ABOUT THE PROJECTS -->
 ## Projects
@@ -82,7 +89,6 @@ RETURN p1, p2, l1, l2 LIMIT 10;
 
 Python ETL pipeline to load construction permits data from the Los Angeles Open Data Portal into a PostgreSQL Docker instance. Run `make data` to download data, load it into a Docker PostgreSQL database, transform columns and geocode missing addresses. Includes a basic Object-Relational Mapper (ORM) library for PostgreSQL using psycopg2. Built on Conda, Python, Shell, Make, PostgreSQL, Docker and psycopg2.
 
-
 ### **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
 
 Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
@@ -91,7 +97,7 @@ Data science notebooks containing EDA and geospatial analyses in the form of cho
 
 ### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning/blob/master/Iris_dataset.ipynb)**
 
-Jupyter notebook that demos EDA, cluster analysis and prediction on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
+Jupyter notebook that demonstrates basic concepts: EDA, modeling, and cluster analysis on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
 
 <!-- CONTACT -->
 ## Contact
