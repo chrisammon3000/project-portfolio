@@ -106,7 +106,7 @@ Contributions to these projects are always welcome. Here are the basic steps:
 <!-- LICENSE -->
 ## License
 
-All of these projects are distributed under the MIT License. See the `LICENSE` file in each repo for more information.
+Most of these projects are distributed under the MIT License. See the `LICENSE` file in each repo for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
