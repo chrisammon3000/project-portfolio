@@ -37,6 +37,12 @@ Links to Data Science notebooks, Data Engineering pipelines and tools to facilit
 <!-- ABOUT THE PROJECTS -->
 ## Projects
 
+### **[bioNX](https://github.com/abk7777/bioNX)** - *Under Development*
+
+Automated Knowledge Graph construction of protein-protein interaction networks using Python and Neo4j. A bioNX Knowledge Graph allows the linking of biological data across disparate sources including as databases, APIs, literature and websites. It can provide insight to the relationships between nodes, which can be anything from academic literature, samples, or experiments, to subjects of inquiry such as gene products, PPIs, small molecules and disease conditions. It can even catalog GPS coordinates and time series data.
+
+![bioNX Screenshot](./img/bionx-screenshot.png)
+
 ### **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
 
 Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
