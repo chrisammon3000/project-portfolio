@@ -41,13 +41,20 @@ Links to Data Science/Data Engineering projects, notebooks, tools and pipelines 
 
 Automated Knowledge Graph construction of protein-protein interaction networks using Python and Neo4j. A bioNX Knowledge Graph allows the linking of biological data across disparate sources including as databases, APIs, literature and websites. It can provide insight to the relationships between nodes, which can be anything from academic literature, samples, or experiments, to subjects of inquiry such as gene products, PPIs, small molecules and disease conditions. It can even catalog GPS coordinates and time series data.
 
+Example Knowledge Graph of interactions mentioned in a particular [PubMed article](https://pubmed.ncbi.nlm.nih.gov/28514442/):
 ![bioNX Screenshot](./img/bionx-screenshot.png)
 
-### **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
+### **[dict-smasher](https://github.com/abk7777/dict-smasher)**
 
-Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
+Python library using recursive functions to flatten nested dictionaries and lists of dictionaries. Built on Python standard library.
 
-![Brazil Fuel Analysis Screenshot](./img/choropleth_mean_fuel_price_state.png)
+```python
+from dict_smasher import dict_smasher, dict_write, select_keys
+
+dict_smasher(nested_dict) # flattens dictionary
+select_keys(nested_dict, keys) # select specific keys
+dict_write(nested_dict, header, path) # output csv file
+```
 
 ### **[csv2ddb](https://github.com/abk7777/csv2ddb)**
 
@@ -58,32 +65,33 @@ csv2ddb create --table-name my-cool-table --partition-key userId --partition-key
 csv2ddb load --table-name my-cool-table ./data/profile.csv
 ```
 
-### **[dict-smasher](https://github.com/abk7777/dict-smasher)**
-
-Python library using recursive functions to flatten nested dictionaries and lists of dictionaries. A work in progress. Built on Python standard library.
-
-```python
-from dict_smasher import dict_smasher, dict_write, select_keys
-
-dict_smasher(nested_dict) # flattens dictionary
-select_keys(nested_dict, keys) # select specific keys
-dict_write(nested_dict, header, path) # output csv file
-```
-
-### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning/blob/master/Iris_dataset.ipynb)**
-
-Jupyter notebook that demos EDA, cluster analysis and prediction on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
-
-
 ### **[neo4j-titanic](https://github.com/abk7777/neo4j-titanic)**
 
 Simple Python data pipeline that loads the *RMS Titanic* dataset into a Neo4j Docker instance. Get it up and running using `make graph`. Built using Conda, Python, Shell, Make, Neo4j and Docker.
 
-![Neo4j Browser](./img/neo4jbrowser.png)
+This Cypher query reveals how family members were spread out across different lifeboats:
+```sh
+MATCH (p1:Passenger)-[:BOARDED]-(l1:Lifeboat),
+(p2:Passenger)-[:BOARDED]-(l2:Lifeboat),
+(p1)-[:RELATED_TO]-(p2)
+RETURN p1, p2, l1, l2 LIMIT 10;
+```
+![neo4j-titanic-screencap.png](./img/neo4j-titanic-screencap.png)
 
 ### **[permits-data](https://github.com/abk7777/permits-data)**
 
 Python ETL pipeline to load construction permits data from the Los Angeles Open Data Portal into a PostgreSQL Docker instance. Run `make data` to download data, load it into a Docker PostgreSQL database, transform columns and geocode missing addresses. Includes a basic Object-Relational Mapper (ORM) library for PostgreSQL using psycopg2. Built on Conda, Python, Shell, Make, PostgreSQL, Docker and psycopg2.
+
+
+### **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
+
+Data science notebooks containing EDA and geospatial analyses in the form of choropleth maps that visualize fuel price data from the Agência Nacional do Petróleo, Gás Natural e Biocombustíveis in Brazil. Uses pandas, geopandas, matplotlib, seaborn, and shapely.
+
+![Brazil Fuel Analysis Screenshot](./img/choropleth_mean_fuel_price_state.png)
+
+### **[iris-machine-learning](https://github.com/abk7777/iris-machine-learning/blob/master/Iris_dataset.ipynb)**
+
+Jupyter notebook that demos EDA, cluster analysis and prediction on the Iris dataset. Uses pandas, matplotlib, seaborn, scikit-learn, and keras for simple visualization and modeling. 
 
 <!-- CONTACT -->
 ## Contact
