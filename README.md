@@ -33,6 +33,7 @@
 ## Overview
 
 Data Science and Data Engineering projects, tools, notebooks and pipelines built by me:
+* **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)**
 * **[bioNX](https://github.com/abk7777/bioNX)**
 * **[dict-smasher](https://github.com/abk7777/dict-smasher)**
 * **[csv2ddb](https://github.com/abk7777/csv2ddb)**
@@ -43,6 +44,9 @@ Data Science and Data Engineering projects, tools, notebooks and pipelines built
 
 <!-- ABOUT THE PROJECTS -->
 ## Projects
+
+### **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)** - *Under Development*
+An ETL pipeline for construction permits data from the [Los Angeles Open Data Portal](https://data.lacity.org/) hosted on AWS using *S3*, *Lambda*, and *RDS PostgreSQL*. Once deployed the pipeline fetches fresh data once a day from the City of Los Angeles data portal and loads or upserts it into an RDS instance running PostgreSQL/PostGIS for geospatial analysis. The pipeline can be deployed with or without VPC and read replicas.
 
 ### **[bioNX](https://github.com/abk7777/bioNX)** - *Under Development*
 
@@ -81,13 +85,13 @@ This Cypher query reveals how family members were spread out across different li
 MATCH (p1:Passenger)-[:BOARDED]-(l1:Lifeboat),
 (p2:Passenger)-[:BOARDED]-(l2:Lifeboat),
 (p1)-[:RELATED_TO]-(p2)
-RETURN p1, p2, l1, l2 LIMIT 10;
+RETURN p1, p2, l1, l2 LIMIT 25;
 ```
 ![neo4j-titanic-screencap.png](./img/neo4j-titanic-screencap.png)
 
 ### **[permits-data](https://github.com/abk7777/permits-data)**
 
-Python ETL pipeline to load construction permits data from the Los Angeles Open Data Portal into a PostgreSQL Docker instance. Run `make data` to download data, load it into a Docker PostgreSQL database, transform columns and geocode missing addresses. Includes a basic Object-Relational Mapper (ORM) library for PostgreSQL using psycopg2. Built on Conda, Python, Shell, Make, PostgreSQL, Docker and psycopg2.
+Python/Docker ETL pipeline to load construction permits data from the Los Angeles Open Data Portal into a PostgreSQL Docker instance. Run `make data` to download data, load it into a Docker PostgreSQL database, transform columns and geocode missing addresses. Includes a basic Object-Relational Mapper (ORM) library for PostgreSQL using psycopg2. Built on Conda, Python, Shell, Make, PostgreSQL, Docker and psycopg2. For an updated version running on AWS please see my `aws-permits-pipeline` project.
 
 ### **[brazil-fuel-price-analysis](https://github.com/abk7777/brazil-fuel-price-analysis)**
 
