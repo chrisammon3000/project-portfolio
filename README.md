@@ -46,13 +46,34 @@ Data Science and Data Engineering projects, tools, notebooks and pipelines built
 ## Projects
 
 ### **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)** - *Under Development*
-An ETL pipeline for construction permits data from the [Los Angeles Open Data Portal](https://data.lacity.org/) hosted on AWS using *S3*, *Lambda*, and *RDS PostgreSQL*. Once deployed the pipeline fetches fresh data once a day from the City of Los Angeles data portal and loads or upserts it into an RDS instance running PostgreSQL/PostGIS for geospatial analysis. The pipeline can be deployed with or without VPC and read replicas.
+
+An ETL pipeline for construction permits data from the [Los Angeles Open Data Portal](https://data.lacity.org/) hosted on AWS using *S3*, *Lambda*, and *RDS PostgreSQL*. Once deployed the pipeline fetches fresh data once a day and loads or upserts it into an RDS instance running PostgreSQL with PostGIS for geospatial analysis. The pipeline can be deployed with or without VPC and read replicas. Built using Python, CloudFormation and Serverless Framework:
+
+```
+# Deploy AWS RDS
+aws --region us-east-1 cloudformation deploy \
+--template-file cfn/rds-vpc.yml \
+--capabilities CAPABILITY_NAMED_IAM \
+--stack-name aws-permits-pipeline-vpc
+
+# Initialize PostgreSQL database and install PostGIS
+serverless invoke --function initDatabase \
+--stage dev \
+--region us-east-1 \
+--log
+
+# Invoke Lambdas for ETL
+serverless invoke --function fetchData \
+--stage dev \
+--region us-east-1 \
+--log
+```
 
 ### **[bioNX](https://github.com/abk7777/bioNX)** - *Under Development*
 
 Automated Knowledge Graph construction of protein-protein interaction networks using Python and Neo4j. A bioNX Knowledge Graph allows the linking of biological data across disparate sources including as databases, APIs, literature and websites. It can provide insight to the relationships between nodes, which can be anything from academic literature, samples, or experiments, to subjects of inquiry such as gene products, PPIs, small molecules and disease conditions.
 
-Example Knowledge Graph of interactions mentioned in a particular [PubMed article](https://pubmed.ncbi.nlm.nih.gov/28514442/):
+Example Knowledge Graph of protein interactions mentioned in a particular [PubMed article](https://pubmed.ncbi.nlm.nih.gov/28514442/):
 ![bioNX Screenshot](./img/bionx-screenshot.png)
 
 ### **[dict-smasher](https://github.com/abk7777/dict-smasher)**
