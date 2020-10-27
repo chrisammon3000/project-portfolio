@@ -32,7 +32,7 @@
 <!-- Background -->
 ## Overview
 
-Data Science and Data Engineering projects, tools, notebooks and pipelines built by me:
+Projects, tools, notebooks and AWS cloud architectures built by me:
 * **[serverless-streaming-reddit-pipeline](https://github.com/abk7777/serverless-streaming-reddit-pipeline)**
 * **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)**
 * **[bioNX](https://github.com/abk7777/bioNX)**
