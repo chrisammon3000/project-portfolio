@@ -33,6 +33,7 @@
 ## Overview
 
 Data Science and Data Engineering projects, tools, notebooks and pipelines built by me:
+* **[serverless-streaming-reddit-pipeline](https://github.com/abk7777/serverless-streaming-reddit-pipeline)**
 * **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)**
 * **[bioNX](https://github.com/abk7777/bioNX)**
 * **[dict-smasher](https://github.com/abk7777/dict-smasher)**
@@ -45,7 +46,29 @@ Data Science and Data Engineering projects, tools, notebooks and pipelines built
 <!-- ABOUT THE PROJECTS -->
 ## Projects
 
-### **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)** - *Under Development*
+### **[serverless-streaming-reddit-pipeline](https://github.com/abk7777/serverless-streaming-reddit-pipeline)**
+
+Serverless big data streaming application using a fan-out architecture with Lambda and SQS to fetch data from Reddit forums, stream to Kinesis Firehose and store in an S3 data lake. An AWS Glue workflow crawls the data and converts it to parquet which can then be queried in Athena or visualized in Quicksight. The pipeline is serverless and infinitely scalable, which means it could be used to monitor any number of subreddits, or even all of Reddit if desired.
+
+Example Athena queries:
+```
+-- Most popular posts by number of comments and upvote ratio
+SELECT MAX(upvote_ratio) AS upvote_ratio, MAX(num_comments) AS num_comments, title
+FROM prod_ssrp_1_raw_reddit_posts_parquet
+GROUP BY title
+ORDER BY num_comments DESC, upvote_ratio DESC
+LIMIT 100;
+```
+```
+-- Most popular authors
+SELECT DISTINCT author AS author, COUNT(DISTINCT title) as posts_count
+FROM prod_ssrp_1_raw_reddit_posts_parquet
+GROUP BY author
+ORDER BY posts_count DESC
+LIMIT 100;
+```
+
+### **[aws-permits-pipeline](https://github.com/abk7777/aws-permits-pipeline)**
 
 An ETL pipeline for construction permits data from the [Los Angeles Open Data Portal](https://data.lacity.org/) hosted on AWS using *S3*, *Lambda*, and *RDS PostgreSQL*. Once deployed the pipeline fetches fresh data once a day and loads or upserts it into an RDS instance running PostgreSQL with PostGIS for geospatial analysis. The pipeline can be deployed with or without VPC and read replicas. Built using Python, CloudFormation and Serverless Framework:
 
