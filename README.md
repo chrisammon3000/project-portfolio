@@ -27,7 +27,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Projects & Experiments
+# Data Science & Data Engineering Projects
 
 <!-- Background -->
 ## Overview
